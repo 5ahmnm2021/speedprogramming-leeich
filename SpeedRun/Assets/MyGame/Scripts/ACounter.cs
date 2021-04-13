@@ -9,7 +9,10 @@ public class ACounter : MonoBehaviour
     public int acount = 0;
     public Text answer;
 
+    int result ;
+
     void Start() {
-        answer.text = adscore.counter;
+        result = adscore.counter;
+        answer.text = result.ToString();
     }
 }
